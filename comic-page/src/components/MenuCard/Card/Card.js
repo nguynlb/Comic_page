@@ -4,7 +4,6 @@ import { styled } from "styled-components";
 const link = "https://picfiles.alphacoders.com/568/thumb-568329.jpg";
 
 const StyledCard = styled.a`
-  margin: 0 5px;
   height: 330px;
   width: 180px;
   text-decoration: none;
@@ -25,7 +24,7 @@ const StyledCardImage = styled.img`
 
 const StyledCardTitle = styled.h3`
   font-size: 0.95em;
-  margin: 3px 5px;
+  margin: 3px;
   width: 180px;
   text-overflow: ellipsis;
   overflow: hidden;
