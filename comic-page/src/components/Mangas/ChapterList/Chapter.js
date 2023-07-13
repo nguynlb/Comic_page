@@ -3,9 +3,8 @@ import React from "react";
 import { styled } from "styled-components";
 
 const StyledChapter = styled.div`
-  margin: 8px 20px;
-
-  width: 80%;
+  margin-bottom: 8px;
+  width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -24,7 +23,7 @@ const StyledChapter = styled.div`
   }
 
   &:hover {
-    background-color: rgb(229, 229, 229, 0.5);
+    background-color: rgb(229, 229, 229, 0.7);
   }
 `;
 
@@ -51,7 +50,7 @@ const StyledInfo = styled.div`
 
 const Chapter = ({ index, title, primary, view, comment }) => {
   return (
-    <StyledChapter>
+    <StyledChapter primary={primary}>
       <StyledInfo>
         <div className="index">{`Chương ${index}`}</div>
         <div>
@@ -62,7 +61,7 @@ const Chapter = ({ index, title, primary, view, comment }) => {
         </div>
       </StyledInfo>
       <div>
-        <MoreOutlined style={{ fontSize: "1.7em", marginRight: "10px" }} />
+        <MoreOutlined style={{ fontSize: "1.7em", marginRight: "40px" }} />
       </div>
     </StyledChapter>
   );

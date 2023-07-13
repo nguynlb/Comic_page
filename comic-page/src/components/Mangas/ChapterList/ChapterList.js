@@ -1,5 +1,6 @@
 import React from "react";
 import Chapter from "./Chapter";
+import { styled } from "styled-components";
 
 const listChapter = [
   {
@@ -30,11 +31,60 @@ const listChapter = [
     comment: 24,
     view: 21800,
   },
+  {
+    id: 5,
+    index: 5,
+    title: "Người đã ly hôn thường rất hút gái",
+    comment: 24,
+    view: 21800,
+  },
+  {
+    id: 6,
+    index: 6,
+    title: "Người đã ly hôn thường rất hút gái",
+    comment: 24,
+    view: 21800,
+  },
+  {
+    id: 7,
+    index: 7,
+    title: "Người đã ly hôn thường rất hút gái",
+    comment: 24,
+    view: 21800,
+  },
+  {
+    id: 8,
+    index: 8,
+    title: "Người đã ly hôn thường rất hút gái",
+    comment: 24,
+    view: 21800,
+  },
+  {
+    id: 9,
+    index: 9,
+    title: "Người đã ly hôn thường rất hút gái",
+    comment: 24,
+    view: 21800,
+  },
+  {
+    id: 10,
+    index: 10,
+    title: "Người đã ly hôn thường rất hút gái",
+    comment: 24,
+    view: 21800,
+  },
 ];
+
+const StyledChapterList = styled.div`
+  margin: 20px;
+  width: 65%;
+  height: 500px;
+  overflow-y: scroll;
+`;
 
 const ChapterList = () => {
   return (
-    <div>
+    <StyledChapterList>
       {listChapter.toReversed().map((chapter) => {
         return (
           <Chapter
@@ -47,7 +97,7 @@ const ChapterList = () => {
           />
         );
       })}
-    </div>
+    </StyledChapterList>
   );
 };
 
